@@ -1,0 +1,24 @@
+{
+  "name": "toy-webpack-hmr",
+  "version": "1.0.0",
+  "description": "手写实现一个简单的webpack-hmr",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/classmatewu/toy-webpack-hmr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/classmatewu/toy-webpack-hmr/issues"
+  },
+  "homepage": "https://github.com/classmatewu/toy-webpack-hmr#readme",
+  "dependencies": {
+    "node-static": "^0.7.11",
+    "sockjs": "^0.3.21"
+  }
+}
