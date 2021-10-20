@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/classmatewu/toy-webpack-hmr#readme",
   "dependencies": {
-    "node-static": "^0.7.11",
-    "sockjs": "^0.3.21"
+    
   }
 }
