@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node ./server/app.js"
+    "server": "node ./server/app.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/classmatewu/toy-webpack-hmr#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "webpack": "^5.59.0"
+    "webpack": "^5.59.0",
+    "webpack-dev-middleware": "^5.2.1"
   }
 }
