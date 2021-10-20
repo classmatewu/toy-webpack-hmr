@@ -16,9 +16,9 @@ module.exports = {
    * 打包出口
    */
   output : {
-    filename : 'bundle.[hash:8].js',
+    filename : 'bundle.[chunkhash:8].js',
     path : path.join(__dirname, './dist'),
-    clean: true, // 代替CleanWebpackPlugin插件功能
+    // clean: true, // 代替CleanWebpackPlugin插件功能
   },
 
   /**
