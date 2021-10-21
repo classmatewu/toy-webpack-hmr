@@ -23,6 +23,7 @@
     "html-webpack-plugin": "^5.4.0",
     "memory-fs": "^0.5.0",
     "mime": "^2.5.2",
+    "socket.io": "^4.3.1",
     "webpack": "^5.59.0",
     "webpack-dev-middleware": "^5.2.1"
   }
