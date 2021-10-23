@@ -15,6 +15,9 @@
       console.log(data);
       socket.emit('xixi', { my: 'data' });
     });
+    socket.on('ok', () => {
+      window.location.reload()
+    })
   </script>
 </body>
 </html>

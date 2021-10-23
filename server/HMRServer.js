@@ -16,7 +16,7 @@ class HMRServer {
     this.socketServer = this._creatSocketServer()
     this.socket = null
     this._webpackDevMiddleware()
-    // this._addCompilerDoneHook()
+    this._addCompilerDoneHook()
   }
 
   /**
@@ -48,7 +48,7 @@ class HMRServer {
     io.on('connection', (socket) => {
       this.socket = socket
       console.log('connection success');
-      socket.emit('haha', () => {}) // 发射事件
+      socket.emit('haha') // 发射事件
       socket.on('xixi', () => {}) // 监听事件
     })
   }
@@ -68,7 +68,8 @@ class HMRServer {
    */
   _addCompilerDoneHook() {
     this.compiler.hooks.done.tap('webpack-dev-server', (stats) => {
-      console.log(111, stats);
+      console.log(111, stats.hash);
+      this.socket.emit('ok')
     })
   }
 }

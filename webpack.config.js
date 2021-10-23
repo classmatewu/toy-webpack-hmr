@@ -29,6 +29,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname,'./src/index.html')
     }),
-    // new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin()
   ],
+
+  devServer: {
+    hot: true,
+    contentBase: path.join(__dirname, './dist')
+  },
 }
