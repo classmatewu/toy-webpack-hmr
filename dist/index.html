@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="/socket.io/socket.io.js"></script>
   <title>Document</title>
-</head>
+<script defer src="bundle.33da72d0.js"></script></head>
 <body>
   <div>小吴同学的HMR</div>
   <div id="app"></div>
   <script>
     var socket = io('http://127.0.0.1:3322');
-    socket.on('haha', function (data) {
+    socket.on('hash', function (data) {
       console.log(data);
-      socket.emit('xixi', { my: 'data' });
+      socket.emit('ok', { my: 'data' });
     });
   </script>
 </body>
